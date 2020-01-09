@@ -11,7 +11,7 @@ root: /
 source: content
 destination: output
 themes_dir: themes
-theme: yasimple-master
+theme: yasimple_x2-master
 
 default_ext: md
 pygments: false
