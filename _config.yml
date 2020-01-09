@@ -11,7 +11,7 @@ root: /
 source: content
 destination: output
 themes_dir: themes
-theme: simple1
+theme: simple2
 
 default_ext: md
 pygments: false
