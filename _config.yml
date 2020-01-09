@@ -4,8 +4,8 @@
 url: https://zh.worldsecrets.net
 title: 世界未解之谜全记录
 keywords: 未解之谜, 超自然力量, 神秘学
-description: 本站旨在收录全世界范围内的未解之谜的案例，包括
-author: A-Middle-School-Student
+description: 本站旨在收录全世界范围内的未解之谜的案例，包括：人类之谜、中外名人之谜、军事战争之谜、古文明之谜、考古之谜、历史与地理之谜、动物与植物之谜、自然与科学之谜、宇宙之谜
+author: WorldSecrets
 
 root: /
 source: content
@@ -17,7 +17,7 @@ category:
   - name: human-secrets
     label: 人类之谜
   - name: celebrity-secrets
-    label: 名人之谜
+    label: 中外名人之谜
   - name: military-war-secrets
     label: 军事战争之谜
   - name: ancient-civilization-secrets
