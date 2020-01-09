@@ -1,32 +1,74 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
-    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
-    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
-    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
-	  <link rel="shortcut icon" href="/static/images/favicon.ico.png" type="image/x-icon">
-	  <link rel="icon" href="/static/images/favicon.ico.png" type="image/x-icon">
-    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
-    <title>Getting Started - 世界未解之谜全记录</title>
-    <meta name="keywords" content="未解之谜, 超自然力量, 神秘学"/>
-    <meta name="description" content="本站旨在收录全世界范围内的未解之谜的案例，包括：人类之谜、中外名人之谜、军事战争之谜、古文明之谜、考古之谜、历史与地理之谜、动物与植物之谜、自然与科学之谜、宇宙之谜"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  </head>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/plugin/tipuesearch/css/tipuesearch.css">
+        <link rel="stylesheet" href="/static/plugin/tipuesearch/css/normalize.css">
+        <link rel="stylesheet" href="/static/plugin/tipuesearch/css/tipuesearch.css">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <title>Getting Started - 世界未解之谜全记录</title>
+        <meta name="keywords" content="未解之谜, 超自然力量, 神秘学"/>
+        <meta name="description" content="本站旨在收录全世界范围内的未解之谜的案例，包括：人类之谜、中外名人之谜、军事战争之谜、古文明之谜、考古之谜、历史与地理之谜、动物与植物之谜、自然与科学之谜、宇宙之谜"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width" />
 
-  <body>
-    <div id="container">
-      
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$(',')$'], ['\\(','\\)'], ['$', '$']]}
+        });
+        </script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+
+        <!-- Google Adsense -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-78529611-1', 'auto');
+          ga('send', 'pageview');
+
+
+            // Google Adsense Auto AD
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            /*
+             (adsbygoogle = window.adsbygoogle || []).push({
+                  google_ad_client: "ca-pub-6300557868920774",
+                  enable_page_level_ads: true
+             });
+             */
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="google-search" style="width:200px; float:right; margin: 20px 0;">
+                <form action="//cse.google.com/cse" method="get" id="search-form">
+                    <input type="hidden" name="cx" value="015970462532790426975:gqlen38ywus"/>
+                    <input type="text" name="q"  style="line-height:20px; padding:4px;" placeholder="站内搜索"/>
+                    <svg width="13" height="13" viewBox="0 0 13 13" style="position:relative; left: -20px;" onclick="document.getElementById('search-form').submit()">
+                        <title>搜索</title>
+                        <path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z">
+                        </path>
+                    </svg>
+                </form>
+
+            </div>
+            
 <div id="header">
-  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#古文明之谜">古文明之谜</a>&nbsp;&#187;&nbsp;Getting Started
-    <!-- <span class="updated">Page Updated&nbsp; -->
-      <!-- 2099-06-02 00:00 -->
-    <!-- </span> --></div>
+  <div id="post-nav"><a href="/">Home</a>&nbsp;»&nbsp;<a href="/#古文明之谜">古文明之谜</a>&nbsp;»&nbsp;Getting Started</div>
 </div>
 <div class="clearfix"></div>
-
-<div class="page_title">Getting Started</div>
-
+<div id="title">Getting Started</div>
+<div id="content">
   <div class="toc"><span class="toctitle">Table of Contents</span><ul>
 <li><a href="#simiki">Simiki</a><ul>
 <li><a href="#quick-start">Quick Start</a><ul>
@@ -103,16 +145,65 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR<b
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER<br />
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN<br />
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-    </div>
-    <div id="footer">
-      <span>
-        <p>Copyright © 2020
-        <a href="https://zh.worldsecrets.net/" target="_self">WorldSecrets</a></p>
-        <!-- <p>Site Generated 2020-01-09 20:52:40</p> -->
-      </span>
-    </div>
+</div>
+<div id="income">
+    <!--img src="/wiki/static/images/support-qrcode.png" alt="支持我" style="max-width:300px;" /-->
 
-    
-    
-  </body>
+    <ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6300557868920774"
+     data-ad-slot="6882414849"></ins>
+</div>
+<div id="content-footer">created in <span class="create-date date"> 2099-06-02 00:00 </span></div>
+
+<div id="comments"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script type="text/javascript">
+const gitment = new Gitment({
+  id: location.pathname,
+  title: 'Getting Started',
+  owner: 'tracholar',
+  repo: 'wiki',
+  oauth: {
+    client_id: '0cc0476e504b5e70ae7c',
+    client_secret: 'ab98e39ef79469040057eba9c6b2b543b84c72ee',
+  },
+  // ...
+  // For more available options, check out the documentation below
+})
+
+gitment.render('comments')
+// or
+// gitment.render(document.getElementById('comments'))
+// or
+// document.body.appendChild(gitment.render())
+</script>
+
+        </div>
+        <div id="footer">
+            <span>
+                Copyright © 2020 WorldSecrets.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+            </span>
+        </div>
+        
+
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?df74779713027375e7b79302fb72d7b0";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+
+        <script src="/tipuesearch_content.js"></script>
+        <script src="/static/plugin/tipuesearch/tipuesearch_set.js"></script>
+        <script src="/static/plugin/tipuesearch/tipuesearch.min.js"></script>
+    </body>
 </html>
