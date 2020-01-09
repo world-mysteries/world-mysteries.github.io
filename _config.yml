@@ -18,6 +18,8 @@ category:
     label: Linux/运维  # 目录的别名, 生成首页时可以使用
   - name: database
     label: 数据库
+  - name: CPP
+    label: 编程语言
 
 default_ext: md
 pygments: false
