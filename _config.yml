@@ -14,12 +14,24 @@ themes_dir: themes
 theme: simple2
 
 category:
-  - name: linux  # 目录名
-    label: Linux/运维  # 目录的别名, 生成首页时可以使用
-  - name: database
-    label: 数据库
-  - name: CPP
-    label: 编程语言
+  - name: human-secrets
+    label: 人类之谜
+  - name: celebrity-secrets
+    label: 名人之谜
+  - name: military-war-secrets
+    label: 军事战争之谜
+  - name: ancient-civilization-secrets
+    label: 古文明之谜
+  - name: archeology-secrets
+    label: 考古之谜
+  - name: history-and-geography-secrets
+    label: 历史与地理之谜
+  - name: animals-and-plants-secrets
+    label: 动物与植物之谜
+  - name: nature-and-science-secrets
+    label: 自然与科学之谜
+  - name: universe-secrets
+    label: 宇宙之谜
 
 default_ext: md
 pygments: false
