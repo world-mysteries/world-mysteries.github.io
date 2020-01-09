@@ -1,34 +1,36 @@
-{%- extends "base.html" %}
+{% extends "base.html" %}
 
-{%- block title %}{{ site.title }}{% endblock %}
+{% macro list_page(pages, parent_url, parent_id) -%}
+      <ul>
+        {%- for page_k, page_v in pages.items() %}
+          {% if site.default_ext in page_k %}
+        <li class="pagelist">
+          <a href="{{ parent_url }}/{{ page_v.name }}.html">{{ page_v.title }}</a>
+        </li>
+          {% else %}
+        {% set id = parent_id ~ "-" ~ page_k %}
+        <li class="pagelist" id="{{ id }}">{{ page_k }}</li>
+            {% set url = parent_url ~ "/" ~ page_k %}
+            {{ list_page(page_v, url, id) }}
+          {% endif %}
+        {%- endfor %}
+      </ul>
+{%- endmacro %}
 
-{%- block container %}
-<div id="title">{{ site.title }}</div>
+{% block title %}{{ site.title }}{% endblock %}
 
-<div id="index">
-{% for category_name, pages in site.structure.items() %}
-{# Top-level wiki pages not display in index #}
-{% if site.default_ext not in category_name %}
-<h2 id="{{ category_name }}">{{ category_name }}</h2>
-  {% set url = "./" ~ category_name %}
-  {{ list_page(pages, url, category_name) }}
-<div class="clearfix"></div>
-{% endif %}
-{% endfor %}
-</div>
-{%- endblock %}
+{% block container %}
+    <div id="title">{{ site.title }}</div>
 
-{%- block script %}
-<script>
-  var list_wrappers = document.getElementsByClassName('list_wrapper')
-  for (var i = 0, len = list_wrappers.length; i < len; i++) {
-    var list_wrapper = list_wrappers[i];
-    var coll_name = list_wrapper.getElementsByClassName('coll_name')[0];
-    var coll_list = list_wrapper.getElementsByClassName('coll_list')[0];
-    var width = coll_name.clientWidth + 3;
-    // http://stackoverflow.com/a/10118190/1276501
-    coll_list.setAttribute("style","margin-left: " + width + "px");
-    coll_list.style.marginLeft = width + "px";
-  }
-</script>
-{%- endblock %}
+    <div id="index">
+  {% for category_name, pages in site.structure.items() %}
+    {# Top-level wiki pages not display in index #}
+    {% if site.default_ext not in category_name %}
+    <h2 id="{{ category_name }}">{{ category_name }}</h2>
+      {% set url = "./" ~ category_name %}
+      {{ list_page(pages, url, category_name) }}
+    <div class="clearfix"></div>
+    {% endif %}
+  {% endfor %}
+    </div>
+{% endblock %}
