@@ -29,7 +29,7 @@
           <li class="pagelist">
               {% set coll = page %}  {# for readability #}
               <div class="list_wrapper">
-                <div class="coll_name item_arrow">{{ coll.name }}&nbsp;&#58;&nbsp;</div>
+                <div class="coll_name item_arrow">{{ coll.name }}&nbsp;&#58;&nbsp;</div><br/>
                 <div class="coll_list">
               {%- for coll_page in coll.pages %}
                   <a href="./{{ category.name }}/{{ coll.name }}/{{ coll_page.name }}.html">{{ coll_page.title }}</a>
