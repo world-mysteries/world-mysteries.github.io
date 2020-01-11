@@ -14,7 +14,7 @@
           {%- else -%}
             {% set id = id ~ "-" ~ c -%}
           {%- endif -%}
-          &nbsp;&#187;&nbsp;<a href="{{ site.root }}/#{{ id }}">{{ c }}</a>
+          &nbsp;&#187;&nbsp;<a href="{{ site.root }}/#{{ id }}">{{ page.category }}</a>
         {%- endfor -%}
       {%- endif -%}
       &nbsp;&#187;&nbsp;{{ page.title }}
