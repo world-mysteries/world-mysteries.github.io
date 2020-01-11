@@ -8,7 +8,7 @@
     {%- if not default_home_page -%}
     <a href="{{ site.root }}/">Home</a>
       {%- if page.category -%}
-        {%- for c in page.category.split("/") -%}
+        {%- for c in page.category.split("\") -%}
           {%- if loop.first -%}
             {%- set id = c -%}
           {%- else -%}
@@ -18,10 +18,10 @@
         {%- endfor -%}
       {%- endif -%}
       &nbsp;&#187;&nbsp;{{ page.title }}
-    <span class="updated">Page Updated&nbsp;
+    <!-- <span class="updated">Page Updated&nbsp;
       {% if page.updated %}{{ page.updated }}
       {% else %}{{ page.date }}{% endif %}
-    </span>
+    </span> -->
     {%- endif -%}
   </div>
 </div>
