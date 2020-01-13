@@ -8,11 +8,12 @@
     {%- if not default_home_page -%}
     <a href="{{ site.root }}/">Home</a>
       {%- if page.category -%}
+        {% set id = "" %}
         {%- for c in page.category.split("\\") -%}
           {%- if loop.first -%}
-            {%- set id = c -%}
+            {%- id = c -%}
           {%- else -%}
-            {% set id = id ~ "-" ~ c -%}
+            {% id = id ~ "-" ~ c -%}
           {%- endif -%}
           &nbsp;&#187;&nbsp;<a href="{{ site.root }}/#{{ id }}">{{ c }}</a>
         {%- endfor -%}
